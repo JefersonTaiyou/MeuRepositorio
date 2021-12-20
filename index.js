@@ -17,6 +17,7 @@ const pi = 3.1415
  *  => FIFO: Primeiro a Entrar/Primeiro a Sair(Fila) 
  *  => LIFO: Ultimo a Entrar/Primeiro a Sair(Pilha) 
  * 
+ * 
  */
 
 if (nome != undefined) {
