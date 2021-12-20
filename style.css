@@ -1,0 +1,77 @@
+    /*
+classes .nomeClasse
+id #nomeId
+*/
+    /* https://fontawesome.com/v5.15/icons?d=gallery&p=2&m=free - icones gratuitos */
+    /*
+https://css3gen.com/text-shadow/
+
+
+box-shadow: 12px 13px 4px 0px #8DC4FF;
+box-shadow: 0px 20px 0px -10px #FFFFFF, 0px -20px 0px -10px #FFFFFF, 20px 0px 0px -10px #FFFFFF, -20px 0px 0px -10px #FFFFFF, 0px 0px 0px 10px #FF0000, 12px 13px 4px 0px rgba(141,196,255,0);
+box-shadow: 5px 5px 0px 0px #289FED, 10px 10px 0px 0px #5FB8FF, 15px 15px 0px 0px #A1D8FF, 20px 20px 0px 0px #CAE6FF, 25px 25px 0px 0px #E1EEFF, 12px 13px 4px 0px rgba(141,196,255,0);
+box-shadow: 5px 5px 5px 0px #000000, inset 4px 4px 15px 0px #000000, 12px 13px 4px 0px rgba(141,196,255,0);
+*/
+    /*
+font-size - tamanho do texto - px
+line-height - espaço entre as linhas - em/rem
+letter-spacing - espaço entre as letras - px
+word-spacing - espaço entre as palavras - px
+text-transform - formato do texto - maiusculo/minusculo/etc
+text-decoration - efeitos do texto - sublinhado/linha sobreppsta/etc
+
+----CSS BOX MODEL:
+background
+padding
+border
+margin
+*/
+    
+    * {
+        margin: 0px;
+    }
+    
+    button {
+        font-size: 50px;
+        /*border: 10px outset blue;
+    border-radius: 40px 0px 40px 0px;*/
+    }
+    
+    #conteudo {
+        padding: 30px 0px;
+    }
+    
+    body {
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        text-align: center;
+        background: white;
+    }
+    
+    .paragraph1 {
+        font-size: 20px;
+        text-align: left;
+        text-decoration: overline;
+        background: darkgreen;
+        padding: 10px;
+        margin-top: 0px;
+        margin-bottom: 2px;
+        border-style: double;
+        border-width: 6px;
+        border-color: darkgoldenrod;
+        text-shadow: 1px 1px red;
+    }
+    
+    h1 {
+        margin-top: 0px;
+        margin-bottom: 2px;
+        border: 4px dashed darkcyan;
+        border-radius: 20px;
+    }
+    
+    .fa-amazon {
+        color: rgb(224, 228, 0);
+    }
+    
+    .fa-facebook-square {
+        color: rgb(12, 10, 141);
+    }
