@@ -11,16 +11,26 @@
     <header>
         <div id="" class="">
             <div id="" class="linha">
-                <div id="" class="coluna">
+                <div id="box" class="coluna">
                     <h1>Qtde Fila Atual:</h1>
                     <h2 id="count-fifo" class="no-animation">0</h2>
                 </div>
-                <div id="" class="coluna">
+                <div id="box" class="coluna">
+
                     <h1>Qtde Entrar Fila:</h1>
                     <h2 id="count-enter-fifo" class="no-animation">0</h2>
                 </div>
+                <div id="box" class="coluna">
+                    <h1>Total Que Entrou:</h1>
+                    <h2 id="count-all-fifo" class="no-animation">0</h2>
+                </div>
+                <div id="box" class="coluna">
+
+                    <h1>...</h1>
+                    <h2 id="count-enter-fifo" class="no-animation">0</h2>
+                </div>
             </div>
-            <p id="fila-el">Fila Atual: </p>
+            <!--<p id="fila-el">Fila Atual: </p>-->
             <p>
                 <button id="increment-btn" onclick="filaAction(1)">Adicionar</button>
                 <button id="remove-btn" onclick="filaAction(0)">Remover</button>
@@ -31,9 +41,9 @@
             </p>
 
         </div>
-        <div id="" class="">
+        <!--<div id="" class="">
             <input type="text" value="..." disabled>
-        </div>
+        </div>-->
     </header>
 
 </body>
