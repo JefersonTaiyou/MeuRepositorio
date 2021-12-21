@@ -19,13 +19,19 @@ const pi = 3.1415
  * 
  */
 let count = 0;
-let valores = [];
+let valores = [undefined];
 let errado = false;
+let qtdeTotal = 0
 
-
-function texto(error) {
+function texto(error = false) {
     document.getElementById("count-enter-fifo").innerText = count
-    document.getElementById("count-fifo").innerText = valores.length
+    document.getElementById("count-all-fifo").innerText = qtdeTotal
+    if (valores[0] == undefined && valores.length == 1) {
+        document.getElementById("count-fifo").innerText = "0"
+    } else {
+        document.getElementById("count-fifo").innerText = valores.length
+    }
+
     if (error != true) {
         msg("normal");
     } else {
@@ -58,7 +64,7 @@ function filaAction(arg = 0) {
 
 function removeList() {
     console.log(valores);
-    let filaEl = document.getElementById("fila-el");
+    //let filaEl = document.getElementById("fila-el");
     delete valores[0];
     if (valores[0] == undefined && valores.length == 1) {
         for (let i = 0; i < valores.length; i++) {
@@ -66,45 +72,58 @@ function removeList() {
             delete valores[i + 1];
         }
     }
-    if (valores[0] == undefined && valores[1] != undefined && valores[1] != null) {
+    if (valores[0] == undefined && valores[1] != undefined || valores[1] != null) {
         for (let i = 0; i < valores.length; i++) {
             valores[i] = valores[i + 1];
             delete valores[i + 1];
         }
         valores.pop();
-        filaEl.innerText = "Fila Atual: " + valores;
+        //filaEl.innerText = "Fila Atual: " + valores;
     } else if (valores[0] == null && valores.length == 1) {
-        filaEl.innerText = "Fila Atual: ";
+        //filaEl.innerText = "Fila Atual: ";
     }
     console.log(valores);
+    texto(errado);
 }
 
 function save() {
     let pos = valores.includes(count);
-    let filaEl = document.getElementById("fila-el");
-    //if (pos != true){
-    //	if (valores[0] == undefined && valores.length==1){
-    //		valores[0] = count;
-    //	}else{
-    //		valores.push(count);
-    //	}
-    //	filaEl.innerText = "Fila Atual: " + valores;
-    //	count=0;
-    //	errado = false;
-    //	texto(errado);
-    //}else{
-    //	errado = true;
-    //	texto(errado);
-    //}
-    for (let i = array[valores.length - 1]; i < valores.length; i++) {
-        valores[i] = valores[i + 1];
-        delete valores[i + 1];
+    //let filaEl = document.getElementById("fila-el");
+    if (valores[0] == undefined || valores[0] == null) {
+        for (let i = 1; i <= count; i++) {
+            valores.push(i);
+            console.log(valores);
+        }
+        valores.shift();
+    } else {
+        let ultimo = valores.slice(-1)[0] + 1;
+        let complemento = (ultimo - 1) + count;
+        for (let i = ultimo; i <= complemento; i++) {
+            valores.push(i);
+            console.log(valores);
+        }
     }
-    console.log(valores);
-
+    qtdeTotal += count;
+    //filaEl.innerText = "Fila Atual: " + valores;
+    errado = false;
+    texto(errado);
+    /*
+            if (pos != true && count != 0) {
+                if (valores[0] == undefined && valores.length == 1) {
+                    valores[0] = count;
+                } else {
+                    valores.push(count);
+                }
+                filaEl.innerText = "Fila Atual: " + valores;
+                count = 0;
+                errado = false;
+                texto(errado);
+            } else {
+                errado = true;
+                texto(errado);
+            }
+    */
 }
-
-
 
 /*
 let myAge = 1
