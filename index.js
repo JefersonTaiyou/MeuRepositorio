@@ -18,6 +18,103 @@ const pi = 3.1415
  *  => LIFO: Ultimo a Entrar/Primeiro a Sair(Pilha) 
  * 
  */
+let count = 0;
+let valores = [];
+let errado = false;
+
+
+function texto(error) {
+    document.getElementById("count-enter-fifo").innerText = count
+    document.getElementById("count-fifo").innerText = valores.length
+    if (error != true) {
+        msg("normal");
+    } else {
+        msg("erro");
+    }
+}
+
+function msg(arg = "normal") {
+    if (arg == "erro") {
+        document.getElementById("count-enter-fifo").setAttribute('class', 'animation');
+        document.getElementById("count-enter-fifo").style.color = "#ff0000";
+    } else if (arg == "normal") {
+        document.getElementById("count-enter-fifo").setAttribute('class', 'no-animation');
+        document.getElementById("count-enter-fifo").style.color = "#000000";
+    }
+}
+
+function filaAction(arg = 0) {
+    if (arg == 1) {
+        count += 1;
+        errado = false;
+        texto(errado);
+    } else if (arg == 0) {
+        if (count > 0) {
+            count -= 1;
+        }
+        texto(errado);
+    }
+}
+
+function removeList() {
+    console.log(valores);
+    let filaEl = document.getElementById("fila-el");
+    delete valores[0];
+    if (valores[0] == undefined && valores.length == 1) {
+        for (let i = 0; i < valores.length; i++) {
+            valores[i] = valores[i + 1];
+            delete valores[i + 1];
+        }
+    }
+    if (valores[0] == undefined && valores[1] != undefined && valores[1] != null) {
+        for (let i = 0; i < valores.length; i++) {
+            valores[i] = valores[i + 1];
+            delete valores[i + 1];
+        }
+        valores.pop();
+        filaEl.innerText = "Fila Atual: " + valores;
+    } else if (valores[0] == null && valores.length == 1) {
+        filaEl.innerText = "Fila Atual: ";
+    }
+    console.log(valores);
+}
+
+function save() {
+    let pos = valores.includes(count);
+    let filaEl = document.getElementById("fila-el");
+    //if (pos != true){
+    //	if (valores[0] == undefined && valores.length==1){
+    //		valores[0] = count;
+    //	}else{
+    //		valores.push(count);
+    //	}
+    //	filaEl.innerText = "Fila Atual: " + valores;
+    //	count=0;
+    //	errado = false;
+    //	texto(errado);
+    //}else{
+    //	errado = true;
+    //	texto(errado);
+    //}
+    for (let i = array[valores.length - 1]; i < valores.length; i++) {
+        valores[i] = valores[i + 1];
+        delete valores[i + 1];
+    }
+    console.log(valores);
+
+}
+
+
+
+/*
+let myAge = 1
+let humanDogRatio = 7
+myDogAge = myAge*humanDogRatio
+console.log("My Age: " + myAge + "\nMy Dog Age: " + myDogAge)
+console.clear()
+*/
+
+
 
 if (nome != undefined) {
     console.log(nome);
