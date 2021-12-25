@@ -353,3 +353,46 @@ body {
 .detalhes .recente-order table tbody tr {
     cursor: default;
 }
+
+.situacao {
+    position: relative;
+    padding: 2px 4px;
+    color: white;
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: 300;
+    letter-spacing: 1px;
+}
+
+.sim {
+    background: green;
+}
+
+.nao {
+    background: red;
+}
+
+.titulo-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.titulo-card h2 {
+    font-size: 500;
+    color: red;
+}
+
+.btn {
+    position: relative;
+    padding: 5px 10px;
+    background: rgb(88, 155, 88);
+    text-decoration: none;
+    color: white;
+    border-radius: 6px;
+    transition: 0.5s;
+}
+
+.btn:hover {
+    background: green;
+}
