@@ -1,6 +1,6 @@
 let nome, sobrenome;
 let nomeComposto = nome + sobrenome;
-const pi = 3.1415
+const pi = 3.1415;
 
 // Comentarios
 
@@ -21,15 +21,15 @@ const pi = 3.1415
 let count = 0;
 let valores = [undefined];
 let errado = false;
-let qtdeTotal = 0
+let qtdeTotal = 0;
 
 function texto(error = false) {
-    document.getElementById("count-enter-fifo").innerText = count
-    document.getElementById("count-all-fifo").innerText = qtdeTotal
+    document.getElementById("count-enter-fifo").innerText = count;
+    document.getElementById("count-all-fifo").innerText = qtdeTotal;
     if (valores[0] == undefined && valores.length == 1) {
-        document.getElementById("count-fifo").innerText = "0"
+        document.getElementById("count-fifo").innerText = "0";
     } else {
-        document.getElementById("count-fifo").innerText = valores.length
+        document.getElementById("count-fifo").innerText = valores.length;
     }
 
     if (error != true) {
@@ -153,24 +153,24 @@ console.log(nam.charCodeAt(1));
 console.log(nam.indexOf('e'));
 console.log(nam.substring(2));
 
-const template = `Meu nome é ${nome}`
-const up = texto => texto.toUpperCase() //função em template
+const template = `Meu nome é ${nome}`;
+const up = texto => texto.toUpperCase();; //função em template
 
 console.log(`Função: ${up(template)}`);
 
 const lista = [];
 
 if (lista[0] == undefined) {
-    lista[0] = "Primeiro Valor"
-    lista.push("Segundo Valor", "terceiro", "quarto", "quinto")
+    lista[0] = "Primeiro Valor";
+    lista.push("Segundo Valor", "terceiro", "quarto", "quinto");
 }
 
-console.log(lista[0], lista, lista.length)
-lista.pop()
-console.log(lista)
+console.log(lista[0], lista, lista.length);
+lista.pop();
 console.log(lista);
-console.log(lista[0])
-    //lista.shift();
+console.log(lista);
+console.log(lista[0]);
+//lista.shift();
 
 //trabalhando com estrutura de dados:
 /*
@@ -184,25 +184,38 @@ console.log(lista[0])
 //FIFO
 delete lista[0];
 if (lista[0] == undefined && lista[1] != undefined) {
-    console.log(lista[0], lista[1])
+    console.log(lista[0], lista[1]);
     for (var i = 0; i < lista.length; i++) {
-        lista[i] = lista[i + 1]
-        delete lista[i + 1]
+        lista[i] = lista[i + 1];
+        delete lista[i + 1];
     }
     lista.pop();
 }
 
-console.log(lista)
+console.log(lista);
 
-const produto = {} // => objeto
-produto.nome = 'Arroz';
-produto.preco = 5.90;
-
-const produto2 = {
-    nome: 'Feijao',
-    preco: 3.70
+function objProduto(nome, preco) {
+    this.nome = nome;
+    this.preco = preco;
 }
 
+const produto = new objProduto( // => objeto
+    'Arroz', 5.90
+);
+
+const produto2 = new objProduto( // => objeto
+    'Feijão', 3.70
+);
+const produto3 = new objProduto( // => objeto
+    'Batata', 2.90
+);
+
+const {
+    nome: n = "Padrão",
+    preco: p = 0.0
+} = produto3; //destructuring object
+
+console.log(n, p);
 const ref = produto2;
 let val = 3;
 let valRef = val;
@@ -220,20 +233,39 @@ console.log(ref);
 console.log(val);
 console.log(valRef);
 
-function soma(a = 0, b = 0) {
-    console.log(a + b);
+{
+    function soma(a = 0, b = 0) {
+        console.log(a + b);
+    }
+    soma();
+    soma(2, 2);
+
+    function somar(a = 0, b = 0) {
+        return a + b;
+    }
+    console.log(somar());
+
+    const imprimirSoma = (a = 0, b = 0) => console.log(a + b)
+    imprimirSoma(5, 8);
 }
-soma();
-soma(2, 2);
 
-function somar(a = 0, b = 0) {
-    return a + b;
-}
-console.log(somar());
+const [a, , b, c, , e = 10] = [1, 2, 3, 4, 5, 6] // destructuring array
+console.log(a, b, c, e)
 
-const imprimirSoma = (a = 0, b = 0) => console.log(a + b)
-imprimirSoma(5, 8);
+function rand({ min = 0, max = 1000 }) {
+    const valor = Math.random() * (max - min) + min;
+    return Math.floor(valor);
+} // destructuring function object
 
+console.log(rand({ min: 500, max: 800 }));
+
+function randomico([min = 0, max = 1000]) {
+    if (min > max)[min, max] = [max, min]
+    const valor = Math.random() * (max - min) + min;
+    return Math.floor(valor);
+} // destructuring function array
+
+console.log(randomico([50, 40]));
 
 
 /*
@@ -255,4 +287,5 @@ imprimirSoma(5, 8);
  * por este motivo que qdo alterado o valor do objeto nome, ref e produto
  * sofreram alterações iguais e qdo alterado valor de valRef, val permaneceu como estava
  * 
+ */
  */
