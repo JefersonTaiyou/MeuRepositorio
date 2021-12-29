@@ -288,4 +288,3 @@ console.log(randomico([50, 40]));
  * sofreram alterações iguais e qdo alterado valor de valRef, val permaneceu como estava
  * 
  */
- */
