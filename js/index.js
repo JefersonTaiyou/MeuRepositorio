@@ -133,8 +133,6 @@ console.log("My Age: " + myAge + "\nMy Dog Age: " + myDogAge)
 console.clear()
 */
 
-
-
 if (nome != undefined) {
     console.log(nome);
     console.log(sobrenome);
@@ -267,6 +265,77 @@ function randomico([min = 0, max = 1000]) {
 
 console.log(randomico([50, 40]));
 
+const result = nota => {
+        return nota >= 7 ? 'Aprovado' : 'Reprovado';
+    } //arrow functions
+
+console.log(result(7));
+console.log(result(9));
+
+const obj = { nome: 'Jeff' }
+
+function tratarErro(erro) {
+    throw 'error';
+}
+
+function mostrar(obj) {
+    try {
+        console.log(obj.nome.toUpperCase() + '!!!')
+    } catch (e) {
+        tratarErro(e);
+    } finally {
+        console.log("Fim do Try/Catch"); //pode gerar um hash para devolver ao user
+    }
+
+}
+
+mostrar(obj);
+
+//funções
+/*
+ * 1-Literal/ 2-Em variavel/ 3-Em Array/
+ * 4-Em objeto/ 5-Como Parametro/ 6-fun que retorna outra fun
+ * 1-function fun1(){}
+ * 
+ * 2-const fun2 = function (){}
+ * 
+ * 3-const array = [function (a,b) {return a+b}]
+ *
+ * 4-const obj ={}
+ * obj.falar = function (){return 'ola'}
+ * console.log(obj.falar())
+ * 
+ * 5-function run(fun){
+ *       fun()
+ * }
+ * run(function(){console.log('executando...')})
+ * 
+ * 6-function soma(a,b){
+ *      return function(c){
+ *          console.log(a+b+c)
+ *      }
+ * }
+ * 
+ * soma(2,3)(4)
+ * 
+ */
+
+
+/*
+ *  definição de valores padrão para funções
+ *
+ * function soma(a,b,c){
+ *      a = a || 1
+ *      b = b || 1
+ *      c = c || 1
+ *      return a + b + c
+ * }
+ *  
+ * function soma(a=1,b=1,c=1){
+ *      return a+b+c
+ * }
+ * 
+ */
 
 /*
  * Atribuição por valor X Atribuição por referência
