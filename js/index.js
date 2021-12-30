@@ -293,24 +293,25 @@ mostrar(obj);
 
 //funções
 /*
- * 1-Literal/ 2-Em variavel/ 3-Em Array/
- * 4-Em objeto/ 5-Como Parametro/ 6-fun que retorna outra fun
- * 1-function fun1(){}
+ * //TODO: 1-Literal/ 2-Em variavel/ 3-Em Array/
+ * //TODO: 4-Em objeto/ 5-Como Parametro/ 6-fun que retorna outra fun
  * 
- * 2-const fun2 = function (){}
+ * //? 1-function fun1(){}
  * 
- * 3-const array = [function (a,b) {return a+b}]
+ * //? 2-const fun2 = function (){}
+ * 
+ * //? 3-const array = [function (a,b) {return a+b}]
  *
- * 4-const obj ={}
+ * //? 4-const obj ={}
  * obj.falar = function (){return 'ola'}
  * console.log(obj.falar())
  * 
- * 5-function run(fun){
+ * //? 5-function run(fun){
  *       fun()
  * }
  * run(function(){console.log('executando...')})
  * 
- * 6-function soma(a,b){
+ * //? 6-function soma(a,b){
  *      return function(c){
  *          console.log(a+b+c)
  *      }
@@ -322,7 +323,7 @@ mostrar(obj);
 
 
 /*
- *  definição de valores padrão para funções
+ *  //todo: definição de valores padrão para funções
  *
  * function soma(a,b,c){
  *      a = a || 1
@@ -337,23 +338,25 @@ mostrar(obj);
  * 
  */
 
+
 /*
- * Atribuição por valor X Atribuição por referência
- * e.g:
- * const produto recebe a referência de um endereço de memória do objeto
- * const ref não recebe o valor do objeto e sim o mesmo endereço de memória
- * ou seja, se o objeto que está na memória mudar seu valor, tanto a const produto
- * quanto a const ref irão ter a mesma alteração que houve no objeto, já que ambas
- * referenciam o endereço de memória
+ * //TODO: Atribuição por valor X Atribuição por referência
+ * //! e.g:
+ * //? const produto recebe a referência de um endereço de memória do objeto
+ * //? const ref não recebe o valor do objeto e sim o mesmo endereço de memória
+ * //? ou seja, se o objeto que está na memória mudar seu valor, tanto a const produto
+ * //? quanto a const ref irão ter a mesma alteração que houve no objeto, já que ambas
+ * //? referenciam o endereço de memória
  * 
- * já a const val recebe um valor em especifico/primitivo e não uma
- * referencia de memória, o que significa que o valor de val
- * é exatamente o que está sendo atribuido à ele
- * portanto a valRef quando recebe val, cria uma cópia do valor
- * de val e ambas contêm valores independentes, ou seja, caso
- * o valor de val mudar, o valor de valRef, permanece o mesmo
+ * //? já a const val recebe um valor em especifico/primitivo e não uma
+ * //? referencia de memória, o que significa que o valor de val
+ * //? é exatamente o que está sendo atribuido à ele
+ * //? portanto a valRef quando recebe val, cria uma cópia do valor
+ * //? de val e ambas contêm valores independentes, ou seja, caso
+ * //? o valor de val mudar, o valor de valRef, permanece o mesmo
  * 
- * por este motivo que qdo alterado o valor do objeto nome, ref e produto
- * sofreram alterações iguais e qdo alterado valor de valRef, val permaneceu como estava
+ * 
+ * //TODO: por este motivo que qdo alterado o valor do objeto nome, ref e produto
+ * //TODO: sofreram alterações iguais e qdo alterado valor de valRef, val permaneceu como estava
  * 
  */
