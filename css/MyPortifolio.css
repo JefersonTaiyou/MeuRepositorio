@@ -452,6 +452,7 @@ img {
     display: block;
     height: 8px;
     background-color: var(--cor);
+    animation: progress 5s infinite alternate;
 }
 
 .skills-html {
@@ -518,4 +519,10 @@ img {
 
 .skills-open .skills-arrow {
     transform: rotate(-180deg);
+}
+
+@keyframes progress {
+    from {
+        width: 0;
+    }
 }
