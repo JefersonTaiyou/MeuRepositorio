@@ -1,0 +1,51 @@
+    @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css");
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+     :root {
+        --font-atual: "Poppins", sans-serif;
+        --cor-1: #0e2431;
+        --cor-2: #6a59d1;
+        --cor-3: #777;
+        --cor-hover: var(--cor-2);
+        --cor-body: #fefefe;
+        --cor-card: var(--cor-body);
+        --cor-modal: var(--cor-body);
+        --cor-bg-transparent: rgba(0, 0, 0, 0.1);
+        --cor-transparent: var(--cor-bg-transparent);
+        --cor-bg-transparent: rgba(106, 89, 209, 0.1);
+        --cor-linha: var(--cor-body);
+        --cor-filtro: invert(1);
+        --box-shadow: 0 0 20px rgb(0, 0, 0/10%);
+        /*! font size */
+        --font-pequeno: .9em;
+        --font-normal: 1em;
+        /*! scrollbar */
+        --scrollbar-cor: #c5cadf;
+        --scroll-thumb-cor: #70768a;
+        --scroll-thumb-cor-hover: #454f6b;
+    }
+    
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: var(--font-atual);
+    }
+    
+    html {
+        scroll-behavior: smooth;
+    }
+    
+    body {
+        color: var(--cor-1);
+        background-color: var(--cor-body);
+        margin: 2rem 0 0;
+        transition: .5s ease;
+    }
+    
+    a {
+        text-decoration: none;
+    }
+    
+    li {
+        list-style: none;
+    }
