@@ -1,7 +1,7 @@
 # Repositorio Estudos/SMAUG
 
 ``` js
-var developer = {
+let developer = {
     "name": "Jeferson Sabino dos Santos Junior",
     "profiles": {
         "linkedIn": "https://www.linkedin.com/in/jeferson-sabino-aa6664184/",
