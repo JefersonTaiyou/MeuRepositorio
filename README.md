@@ -28,4 +28,20 @@
     
   - Códigos do Jogo: https://github.com/JefersonTaiyou/MeuRepositorio/tree/main/Python <br> -- Pasta Magic Rit-Mus
   </p>
+  
+  <p>
+  <br>SMAUG 3º Semestre será desenvolvido na linguagem 
+    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/csharp/csharp-original.svg" alt="C#" title="C#" style="max-width: 100%;" width="40" height="40" align="middle"> usando a Engine <img src="https://raw.githubusercontent.com/Harindulk/harindu.dev/main/assets/icons/unity.svg" alt="unity" title="Unity" style="max-width: 100%;" width="40" height="40" align="middle">
+
+
+  - Nome do Jogo: <i></i>
+
+  - Gênero: <i></i>
+    
+  - Equipe de Desenvolvimento: <i>BitGames</i>
+    
+  - Link do Jogo: 
+    
+  - Códigos do Jogo: 
+  </p>
 </div>
