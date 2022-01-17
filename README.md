@@ -16,7 +16,7 @@
 
   <p>
   <br>SMAUG 2º Semestre desenvolvido na linguagem 
-    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" alt="Python" title="Python" style="max-width: 100%;" width="40" height="40" align="middle"> usando a Engine <img src="https://github.com/devicons/devicon/blob/master/icons/pycharm/pycharm-original.svg" alt="PyCharm" title="PyCharm" style="max-width: 100%;" width="40" height="40" align="middle">
+    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" alt="Python" title="Python" style="max-width: 100%;" width="40" height="40" align="center"> usando a Engine <img src="https://github.com/devicons/devicon/blob/master/icons/pycharm/pycharm-original.svg" alt="PyCharm" title="PyCharm" style="max-width: 100%;" width="40" height="40" align="center">
 
   - Nome do Jogo: <i>Magic Rit-Mus</i>
 
@@ -31,7 +31,7 @@
   
   <p>
   <br>SMAUG 3º Semestre será desenvolvido na linguagem 
-    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/csharp/csharp-original.svg" alt="C#" title="C#" style="max-width: 100%;" width="40" height="40" align="middle"> usando a Engine <img src="https://raw.githubusercontent.com/Harindulk/harindu.dev/main/assets/icons/unity.svg" alt="unity" title="Unity" style="max-width: 100%;" width="40" height="40" align="middle">
+    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/csharp/csharp-original.svg" alt="C#" title="C#" style="max-width: 100%;" width="40" height="40" align="center"> usando a Engine <img src="https://raw.githubusercontent.com/Harindulk/harindu.dev/main/assets/icons/unity.svg" alt="unity" title="Unity" style="max-width: 100%;" width="40" height="40" align="center">
 
 
   - Nome do Jogo: <i></i>
