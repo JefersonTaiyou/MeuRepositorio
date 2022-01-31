@@ -1,6 +1,6 @@
 MIT License
 
-<i>Copyright (c)</i> 2022 Jeferson Sabino dos Santos Junior
+Copyright (c) 2022 Jeferson Sabino dos Santos Junior
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
