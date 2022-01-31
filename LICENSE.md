@@ -1,4 +1,4 @@
-`MIT License`
+MIT License
 
 <i>Copyright (c)</i> 2022 Jeferson Sabino dos Santos Junior
 
